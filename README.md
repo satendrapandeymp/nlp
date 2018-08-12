@@ -1,4 +1,4 @@
-## Gwtting relevent videos for tutorialspoint.com tutorials
+## Getting relevent videos for tutorialspoint.com tutorials
 
 ## Installation
 This code have been developed on a debian based system so for using this on windows maching just look at the section where filename have been mentioned. if less on time then just replace '/' by '\\' and if you have enough time then just import module os and use os.join() and push it back for greater good.
