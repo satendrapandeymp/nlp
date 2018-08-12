@@ -1,4 +1,4 @@
-##Comparing tutorialspoint.com tutorial to video tutorials
+## Comparing tutorialspoint.com tutorial to video tutorials
 
 ## Installation
 This code have been developed on a debian based system so for using this on windows maching just look at the section where filename have been mentioned.
@@ -16,19 +16,19 @@ Now you need to download some models in nltk, You can simply run
 
 **there will be link.csv file to give you reference of link from filename**
 
-##This project are divided into several parts
+## This project are divided into several parts
 
-###1) Downloading data from youtube
+### 1) Downloading data from youtube
     Run gettingSub.py by using following commands and give keywords when asked
     ```python gettingSub.py```
     you can also use this feature in other python script by importing the class ScrapSubs
 
-###2) Downloading data from tutorialspoint
+### 2) Downloading data from tutorialspoint
     Run gettingTut.py by using following commands and give base url like "https://www.tutorialspoint.com/javascript/javascript_overview.htm" when asked
     ```python gettingTut.py```
     you can also use this feature in other python script by importing the class scrapTutorials
 
-###3) Preprocessing of data
+### 3) Preprocessing of data
     In preprocessing I'm going through following steps:
         1) Considering subtopics too from a html file from tutorialspoint.com
         2) Converting string to lower
@@ -43,13 +43,13 @@ Now you need to download some models in nltk, You can simply run
     you can import functions like this:
 **from langProcessing import docParse, preProcess, cwords, subsParse, get_cosine, column**
 
-###4) Doc_matching
+### 4) Doc_matching
     This is the most common algorithms to compare two documents, Where we get bag of words then see cosine similarity of two documents.
     In this scripts I have also compared heading-heading and haven't normalised the score so don't freak out if you see score more than 1 :p
     Run docSimilarity.py by using following commands it will save results in a csv file where first column consist our tutorialpoints filename and subsequesnt columns represents close yoputube videos
     ```python docSimilarity.py```
 
-###5) Topic Modeling
+### 5) Topic Modeling
     In topic modeling we get a topic from a given document, It used LDA "https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" model.
     In this scripts I have also compared heading-heading and haven't normalised the score so don't freak out if you see score more than 1 :p
     Run topicSim.py by using following commands it will save results in a csv file where first column consist our tutorialpoints filename and subsequesnt columns represents close yoputube videos
