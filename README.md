@@ -20,7 +20,9 @@ Now you need to download some models in nltk, You can simply run
 
 ### 1) Downloading data from youtube
     Run gettingSub.py by using following commands and give keywords when asked
-    ```bash python gettingSub.py```
+    ```bash
+    python gettingSub.py
+    ```
     you can also use this feature in other python script by importing the class ScrapSubs
 
 ### 2) Downloading data from tutorialspoint
