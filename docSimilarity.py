@@ -32,9 +32,10 @@ if __name__ == "__main__":
 
 	# now we will check it against all of the tutorials
 	# Here I am assuming that most of thr tutorials must have some good resources on each topic
+	# to go inside all the video tutorials
 	for ytFolder in ytFolders:
 
-		# Iterate through all the folders
+		# Iterate through all the files in that video tutorial folders
 		ytFiles = sorted(glob(ytFolder + "/*")) 	
 
 
@@ -59,11 +60,13 @@ if __name__ == "__main__":
 					temp_res += get_cosine(procSub['header'] , section['para'])
 					temp_res += get_cosine(procSub['para'] , section['header'])
 				result.append({"score": temp_res, "file": ytFiles[countSub]})
+			# Sorting by the score and later we wil take just the one document from this video tutorial which did match with highest score
 			result.sort(key=lambda r:r["score"])
 			tempRes.append({ "tutorialFile": tuteFiles[countTute].split("/")[-1], "matchedFile":  result[-1:][0]["file"], "Score": result[-1:][0]["score"]})
 
 		finalRes.append(tempRes)		
-			
+		
+	#arrange the result and take only 5 good videos for each of the tutorialpoint tutorial	
 	mfinalRes = []	
 	for i in range(len(tuteFiles)):
 		temp = column(finalRes, i)
