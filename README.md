@@ -20,7 +20,7 @@ Now you need to download some models in nltk, You can simply run
 
 ### 1) Downloading data from youtube
     Run gettingSub.py by using following commands and give keywords when asked
-    ```python gettingSub.py```
+    ```bash python gettingSub.py```
     you can also use this feature in other python script by importing the class ScrapSubs
 
 ### 2) Downloading data from tutorialspoint
@@ -41,7 +41,7 @@ Now you need to download some models in nltk, You can simply run
     File gettingTut.py contains a many relevent functions.
     Function preProcess() will return preprocessed string into string format as well as list format
     you can import functions like this:
-**from langProcessing import docParse, preProcess, cwords, subsParse, get_cosine, column**
+    from langProcessing import docParse, preProcess, cwords, subsParse, get_cosine, column
 
 ### 4) Doc_matching
     This is the most common algorithms to compare two documents, Where we get bag of words then see cosine similarity of two documents.
