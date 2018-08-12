@@ -1,0 +1,50 @@
+<para> The phrase tags have been desicolgned for specific purposes, though they are displayed in a similar way as other basic tags like <b>, <i>, <pre>, and <tt>, you have seen in previous chapter. This chapter will take you through all the important phrase tags, so let's start seeing them one by one. </para>
+<header> Emphasized Text </header>
+<para> Anything that appears within <em>...</em> element is displayed as emphasized text. </para>
+<para> This will produce the following result − </para>
+<header> Marked Text </header>
+<para> Anything that appears with-in <mark>...</mark> element, is displayed as marked with yellow ink. </para>
+<para> This will produce the following result − </para>
+<header> Strong Text </header>
+<para> Anything that appears within <strong>...</strong> element is displayed as important text. </para>
+<para> This will produce the following result − </para>
+<header> Text Abbreviation </header>
+<para> You can abbreviate a text by putting it inside opening <abbr> and closing </abbr> tags. If present, the title attribute must contain this full description and nothing else. </para>
+<para> This will produce the following result − </para>
+<header> Acronym Element </header>
+<para> The <acronym> element allows you to indicate that the text between <acronym> and </acronym> tags is an acronym. </para>
+<para> At present, the major browsers do not change the appearance of the content of the <acronym> element. </para>
+<para> This will produce the following result − </para>
+<header> Text Direction </header>
+<para> The <bdo>...</bdo> element stands for Bi-Directional Override and it is used to override the current text direction. </para>
+<para> This will produce the following result − </para>
+<header> Special Terms </header>
+<para> The <dfn>...</dfn> element (or HTML Definition Element) allows you to specify that you are introducing a special term. It's usage is similar to italic words in the midst of a paragraph. </para>
+<para> Typically, you would use the <dfn> element the first time you introduce a key term. Most recent browsers render the content of a <dfn> element in an italic font. </para>
+<para> This will produce the following result − </para>
+<header> Quoting Text </header>
+<para> When you want to quote a passage from another source, you should put it in between <blockquote>...</blockquote> tags. </para>
+<para> Text inside a <blockquote> element is usually indented from the left and right edges of the surrounding text, and sometimes uses an italicized font. </para>
+<para> This will produce the following result − </para>
+<header> Short Quotations </header>
+<para> The <q>...</q> element is used when you want to add a double quote within a sentence. </para>
+<para> This will produce the following result − </para>
+<header> Text Citations </header>
+<para> If you are quoting a text, you can indicate the source placing it between an opening <cite> tag and closing </cite> tag </para>
+<para> As you would expect in a print publication, the content of the <cite> element is rendered in italicized text by default. </para>
+<para> This will produce the following result − </para>
+<header> Computer Code </header>
+<para> Any programming code to appear on a Web page should be placed inside <code>...</code> tags. Usually the content of the <code> element is presented in a monospaced font, just like the code in most programming books. </para>
+<para> This will produce the following result − </para>
+<header> Keyboard Text </header>
+<para> When you are talking about computers, if you want to tell a reader to enter some text, you can use the <kbd>...</kbd> element to indicate what should be typed in, as in this example. </para>
+<para> This will produce the following result − </para>
+<header> Programming Variables </header>
+<para> This element is usually used in conjunction with the <pre> and <code> elements to indicate that the content of that element is a variable. </para>
+<para> This will produce the following result − </para>
+<header> Program Output </header>
+<para> The <samp>...</samp> element indicates sample output from a program, and script etc. Again, it is mainly used when documenting programming or coding concepts. </para>
+<para> This will produce the following result − </para>
+<header> Address Text </header>
+<para> The <address>...</address> element is used to contain any address. </para>
+<para> This will produce the following result − </para>

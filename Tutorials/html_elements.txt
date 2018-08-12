@@ -1,0 +1,9 @@
+<para> An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash as shown below with few tags − </para>
+<para> So here <p>....</p> is an HTML element, <h1>...</h1> is another HTML element. There are some HTML elements which don't need to be closed, such as <img.../>, <hr /> and <br /> elements. These are known as void elements. </para>
+<para> HTML documents consists of a tree of these elements and they specify how HTML documents should be built, and what kind of content should be placed in what part of an HTML document. </para>
+<header> HTML Tag vs. Element </header>
+<para> An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag. </para>
+<para> For example, <p> is starting tag of a paragraph and </p> is closing tag of the same paragraph but <p>This is paragraph</p> is a paragraph element. </para>
+<header> Nested HTML Elements </header>
+<para> It is very much allowed to keep one HTML element inside another HTML element − </para>
+<para> This will display the following result − </para>

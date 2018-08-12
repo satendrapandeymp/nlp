@@ -1,0 +1,41 @@
+<para> If you use a word processor, you must be familiar with the ability to make text bold, italicized, or underlined; these are just three of the ten options available to indicate how text can appear in HTML and XHTML. </para>
+<header> Bold Text </header>
+<para> Anything that appears within <b>...</b> element, is displayed in bold as shown below − </para>
+<para> This will produce the following result − </para>
+<header> Italic Text </header>
+<para> Anything that appears within <i>...</i> element is displayed in italicized as shown below − </para>
+<para> This will produce the following result − </para>
+<header> Underlined Text </header>
+<para> Anything that appears within <u>...</u> element, is displayed with underline as shown below − </para>
+<para> This will produce the following result − </para>
+<header> Strike Text </header>
+<para> Anything that appears within <strike>...</strike> element is displayed with strikethrough, which is a thin line through the text as shown below − </para>
+<para> This will produce the following result − </para>
+<header> Monospaced Font </header>
+<para> The content of a <tt>...</tt> element is written in monospaced font. Most of the fonts are known as variable-width fonts because different letters are of different widths (for example, the letter 'm' is wider than the letter 'i'). In a monospaced font, however, each letter has the same width. </para>
+<para> This will produce the following result − </para>
+<header> Superscript Text </header>
+<para> The content of a <sup>...</sup> element is written in superscript; the font size used is the same size as the characters surrounding it but is displayed half a character's height above the other characters. </para>
+<para> This will produce the following result − </para>
+<header> Subscript Text </header>
+<para> The content of a <sub>...</sub> element is written in subscript; the font size used is the same as the characters surrounding it, but is displayed half a character's height beneath the other characters. </para>
+<para> This will produce the following result − </para>
+<header> Inserted Text </header>
+<para> Anything that appears within <ins>...</ins> element is displayed as inserted text. </para>
+<para> This will produce the following result − </para>
+<header> Deleted Text </header>
+<para> Anything that appears within <del>...</del> element, is displayed as deleted text. </para>
+<para> This will produce the following result − </para>
+<header> Larger Text </header>
+<para> The content of the <big>...</big> element is displayed one font size larger than the rest of the text surrounding it as shown below − </para>
+<para> This will produce the following result − </para>
+<header> Smaller Text </header>
+<para> The content of the <small>...</small> element is displayed one font size smaller than the rest of the text surrounding it as shown below − </para>
+<para> This will produce the following result − </para>
+<header> Grouping Content </header>
+<para> The <div> and <span> elements allow you to group together several elements to create sections or subsections of a page. </para>
+<para> For example, you might want to put all of the footnotes on a page within a <div> element to indicate that all of the elements within that <div> element relate to the footnotes. You might then attach a style to this <div> element so that they appear using a special set of style rules. </para>
+<para> This will produce the following result − </para>
+<para> The <span> element, on the other hand, can be used to group inline elements only. So, if you have a part of a sentence or paragraph which you want to group together, you could use the <span> element as follows. </para>
+<para> This will produce the following result − </para>
+<para> These tags are commonly used with CSS to allow you to attach a style to a section of a page. </para>

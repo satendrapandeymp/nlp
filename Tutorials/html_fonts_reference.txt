@@ -1,0 +1,18 @@
+<para> Fonts are specific to platform. You will have different look and feel of a web page on different machines running different operating systems like Windows, Linux or Mac iOS. Here we are giving a list of fonts which are available in various operating systems. </para>
+<para> HTML <font> tag is deprecated in version 4.0 onwards and now all fonts are set by using CSS. Here is the simple syntax of setting font of a body of web page. </para>
+<header> Example </header>
+<para> This will produce the following result − </para>
+<header> Fonts for Microsoft Systems </header>
+<para> You can check example fonts here − Microsoft Fonts Examples </para>
+<header> Fonts for Macintosh Systems </header>
+<para> Following is the list of fonts supported by Macintosh System 7 and higher versions </para>
+<para> You can check example fonts here − Mac Fonts Examples </para>
+<header> Fonts for Unix Systems </header>
+<para> Following is the list of fonts supported by most Unix System variants </para>
+<para> You can check example fonts here − Unix Fonts Examples </para>
+<header> HTML ASCII Codes </header>
+<para> There are 27 = 128 printable characters which can be represented by different 7-BIT ASCII codes. Another set of characters are not for HTML representation but they are devised to control hardware. </para>
+<para> Following tables list down all the 7-BIT ASCII codes and their equivalent HTML Entity Codes. </para>
+<para> If you want to see equivalent HEX, OCT and extended set of ASCII codes then check next chapter. </para>
+<header> 7-BIT Printable ASCII Characters </header>
+<header> 7-BIT ASCII Device Control Characters </header>

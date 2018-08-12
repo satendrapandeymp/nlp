@@ -1,0 +1,11 @@
+<para> Fonts are specific to platform. If you are using different OS then you will have different look and feel of any web page. Here we are giving a list of fonts which are available to various operating systems. </para>
+<para> HTML <FONT> tag is deprecated in version 4.0 onwards and now all fonts are set by using CSS. Here is the simple syntax of setting font of a body of web page. </para>
+<header> Fonts for Microsoft OS and Browsers − </header>
+<para> You can have more information on Microsoft Fonts at http://www.microsoft.com/typography/fonts. </para>
+<para> You can check example fonts here − Microsoft Fonts Examples </para>
+<header> Fonts for Macintosh Systems − </header>
+<para> Following is the list of fonts supported by Macintosh System 7 and higher versions </para>
+<para> You can check example fonts here − Mac Fonts Examples </para>
+<header> Fonts for Unix Systems − </header>
+<para> Following is the list of fonts supported by most Unix System variants </para>
+<para> You can check example fonts here −Unix Fonts Examples </para>

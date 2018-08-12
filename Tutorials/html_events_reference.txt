@@ -1,0 +1,12 @@
+<para> When users visit your website, they do things like click various links, bring mouse over text and images etc. These are examples of what we call events in JavaScript and VBScript terminologies. </para>
+<para> We can write our event handlers using JavaScript or VBScript and can specify some actions to be taken against these events. Though these are the events but they will be specified as attributes for the HTML tags. </para>
+<para> The HTML 4.01 specification had defined 19 events but later HTML-5 has added many other events which we have listed down here − </para>
+<header> Window Events Attributes </header>
+<para> Following events have been introduced in older versions of HTML but all the tags marked with are part of HTML-5. </para>
+<header> Form Events </header>
+<para> Following tags have been introduced in older versions of HTML but all the tags marked with  are part of HTML-5. </para>
+<header> Keyboard Events </header>
+<header> Mouse Events </header>
+<para> Following tags have been introduced in older versions of HTML but all the tags marked with  are part of HTML-5. </para>
+<header> Media Events </header>
+<para> Following tags have been introduced in older versions of HTML but all the tags marked with  are part of HTML-5. </para>

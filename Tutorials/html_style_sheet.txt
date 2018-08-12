@@ -1,0 +1,27 @@
+<para> Cascading Style Sheets (CSS) describe how documents are presented on screens, in print, or perhaps how they are pronounced. W3C has actively promoted the use of style sheets on the Web since the consortium was founded in 1994. </para>
+<para> Cascading Style Sheets (CSS) provide easy and effective alternatives to specify various attributes for the HTML tags. Using CSS, you can specify a number of style properties for a given HTML element. Each property has a name and a value, separated by a colon (:). Each property declaration is separated by a semi-colon (;). </para>
+<header> Example </header>
+<para> First let's consider an example of HTML document which makes use of <font> tag and associated attributes to specify text color and font size − </para>
+<para> Note − The font tag deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use CSS styles to manipulate your fonts. But still for learning purpose, this chapter will work with an example using the font tag. </para>
+<para> We can re-write above example with the help of Style Sheet as follows − </para>
+<para> This will produce the following result − </para>
+<para> You can use CSS in three ways in your HTML document − </para>
+<para> External Style Sheet − Define style sheet rules in a separate .css file and then include that file in your HTML document using HTML <link> tag. </para>
+<para> Internal Style Sheet − Define style sheet rules in header section of the HTML document using <style> tag. </para>
+<para> Inline Style Sheet − Define style sheet rules directly along-with the HTML elements using style attribute. </para>
+<para> Let's see all the three cases one by one with the help of suitable examples. </para>
+<header> External Style Sheet </header>
+<para> If you need to use your style sheet to various pages, then its always recommended to define a common style sheet in a separate file. A cascading style sheet file will have extension as .css and it will be included in HTML files using <link> tag. </para>
+<para> Consider we define a style sheet file style.css which has following rules − </para>
+<para> Here we defined three CSS rules which will be applicable to three different classes defined for the HTML tags. I suggest you should not bother about how these rules are being defined because you will learn them while studying CSS. Now let's make use of the above external CSS file in our following HTML document − </para>
+<para> This will produce the following result − </para>
+<header> Internal Style Sheet </header>
+<para> If you want to apply Style Sheet rules to a single document only, then you can include those rules in header section of the HTML document using <style> tag. </para>
+<para> Rules defined in internal style sheet overrides the rules defined in an external CSS file. </para>
+<para> Let's re-write above example once again, but here we will write style sheet rules in the same HTML document using <style> tag − </para>
+<para> This will produce the following result − </para>
+<header> Inline Style Sheet </header>
+<para> You can apply style sheet rules directly to any HTML element using style attribute of the relevant tag. This should be done only when you are interested to make a particular change in any HTML element only. </para>
+<para> Rules defined inline with the element overrides the rules defined in an external CSS file as well as the rules defined in <style> element. </para>
+<para> Let's re-write above example once again, but here we will write style sheet rules along with the HTML elements using style attribute of those elements. </para>
+<para> This will produce the following result − </para>

@@ -1,0 +1,3 @@
+<para> The following is a draft list of language code correspondences between ISO codes, Microsoft codes, and Macintosh codes. Source of this information is Unicode Consortium. </para>
+<header> Language Codes: ISO 639, Microsoft </header>
+<header> Language Codes: ISO 639, Macintosh </header>

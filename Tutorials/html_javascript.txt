@@ -1,0 +1,23 @@
+<para> A script is a small piece of program that can add interactivity to your website. For example, a script could generate a pop-up alert box message, or provide a dropdown menu. This script could be written using JavaScript or VBScript. </para>
+<para> You can write various small functions, called event handlers using any of the scripting language and then you can trigger those functions using HTML attributes. </para>
+<para> Now-a-days, only JavaScript and associated frameworks are being used by most of the web developers, VBScript is not even supported by various major browsers. </para>
+<para> You can keep JavaScript code in a separate file and then include it wherever it's needed, or you can define functionality inside HTML document itself. Let's see both the cases one by one with suitable examples. </para>
+<header> External JavaScript </header>
+<para> If you are going to define a functionality which will be used in various HTML documents then it's better to keep that functionality in a separate JavaScript file and then include that file in your HTML documents. A JavaScript file will have extension as .js and it will be included in HTML files using <script> tag. </para>
+<para> Consider we define a small function using JavaScript in script.js which has following code − </para>
+<para> Now let's make use of the above external JavaScript file in our following HTML document − </para>
+<para> This will produce the following result, where you can try to click on the given button − </para>
+<header> Internal Script </header>
+<para> You can write your script code directly into your HTML document. Usually we keep script code in header of the document using <script> tag, otherwise there is no restriction and you can put your source code anywhere in the document but inside <script> tag. </para>
+<para> This will produce the following result, where you can try to click on the given button − </para>
+<header> Event Handlers </header>
+<para> Event handlers are nothing but simply defined functions which can be called against any mouse or keyboard event. You can define your business logic inside your event handler which can vary from a single to 1000s of line code. </para>
+<para> Following example explains how to write an event handler. Let's write one simple function EventHandler() in the header of the document. We will call this function when any user brings mouse over a paragraph. </para>
+<para> Now This will produce the following result. Bring your mouse over this line and see the result − </para>
+<header> Hide Scripts from Older Browsers </header>
+<para> Although most (if not all) browsers these days support JavaScript, but still some older browsers don't. If a browser doesn't support JavaScript, instead of running your script, it would display the code to the user. To prevent this, you can simply place HTML comments around the script as shown below. </para>
+<header> The <noscript> Element </header>
+<para> You can also provide alternative info to the users whose browsers don't support scripts and for those users who have disabled script option their browsers. You can do this using the <noscript> tag. </para>
+<header> Default Scripting Language </header>
+<para> There may be a situation when you will include multiple script files and ultimately using multiple <script> tags. You can specify a default scripting language for all your script tags. This saves you from specifying the language every time you use a script tag within the page. Below is the example − </para>
+<para> Note that you can still override the default by specifying a language within the script tag. </para>

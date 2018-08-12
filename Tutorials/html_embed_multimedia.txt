@@ -1,0 +1,50 @@
+<para> Sometimes you need to add music or video into your web page. The easiest way to add video or sound to your web site is to include the special HTML tag called <embed>. This tag causes the browser itself to include controls for the multimedia automatically provided browser supports <embed> tag and given media type. </para>
+<para> You can also include a <noembed> tag for the browsers which don't recognize the <embed> tag. You could, for example, use <embed> to display a movie of your choice, and <noembed> to display a single JPG image if browser does not support <embed> tag. </para>
+<para> Here is a simple example to play an embedded midi file − </para>
+<header> The <embed> Tag Attributes </header>
+<para> Following is the list of important attributes which can be used with <embed> tag. </para>
+<para> Note −The align and autostart attributes deprecated in HTML5. Do not use these attributes. </para>
+<para> align </para>
+<para> Determines how to align the object. It can be set to either center, left or right. </para>
+<para> autostart </para>
+<para> This boolean attribute indicates if the media should start automatically. You can set it either true or false. </para>
+<para> loop </para>
+<para> Specifies if the sound should be played continuously (set loop to true), a certain number of times (a positive value) or not at all (false) </para>
+<para> playcount </para>
+<para> Specifies the number of times to play the sound. This is alternate option for loop if you are usiong IE. </para>
+<para> hidden </para>
+<para> Specifies if the multimedia object should be shown on the page. A false value means no and true values means yes. </para>
+<para> width </para>
+<para> Width of the object in pixels </para>
+<para> height </para>
+<para> Height of the object in pixels </para>
+<para> name </para>
+<para> A name used to reference the object. </para>
+<para> src </para>
+<para> URL of the object to be embedded. </para>
+<para> volume </para>
+<para> Controls volume of the sound. Can be from 0 (off) to 100 (full volume). </para>
+<header> Supported Video Types </header>
+<para> You can use various media types like Flash movies (.swf), AVI's (.avi), and MOV's (.mov) file types inside embed tag. </para>
+<para> .swf files − are the file types created by Macromedia's Flash program. </para>
+<para> .wmv files − are Microsoft's Window's Media Video file types. </para>
+<para> .mov files − are Apple's Quick Time Movie format. </para>
+<para> .mpeg files − are movie files created by the Moving Pictures Expert Group. </para>
+<para> This will produce the following result − </para>
+<header> Background Audio </header>
+<para> You can use HTML <bgsound> tag to play a soundtrack in the background of your webpage. This tag is supported by Internet Explorer only and most of the other browsers ignore this tag. It downloads and plays an audio file when the host document is first downloaded by the user and displayed. The background sound file also will replay whenever the user refreshes the browser. </para>
+<para> Note − The bgsound tag is deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use HTML5 tag audio for adding sound. But still for learning purpose, this chapter will explain bgsound tag in detail. </para>
+<para> This tag is having only two attributes loop and src. Both these attributes have same meaning as explained above. </para>
+<para> Here is a simple example to play a small midi file − </para>
+<para> This will produce the blank screen. This tag does not display any component and remains hidden. </para>
+<para> Internet Explorer can also handle only three different sound format files − wav, the native format for PCs; au, the native format for most Unix workstations; and MIDI, a universal music-encoding scheme. </para>
+<header> HTML Object tag </header>
+<para> HTML 4 introduces the <object> element, which offers an all-purpose solution to generic object inclusion. The <object> element allows HTML authors to specify everything required by an object for its presentation by a user agent. </para>
+<para> Here are a few examples − </para>
+<para> You can embed an HTML document in an HTML document itself as follows − </para>
+<para> Here alt attribute will come into picture if browser does not support object tag. </para>
+<para> You can embed a PDF document in an HTML document as follows − </para>
+<para> You can specify some parameters related to the document with the <param> tag. Here is an example to embed a wav file − </para>
+<para> You can add a flash document as follows − </para>
+<para> You can add a java applet into HTML document as follows − </para>
+<para> The classid attribute identifies which version of Java Plug-in to use. You can use the optional codebase attribute to specify if and how to download the JRE. </para>

@@ -1,0 +1,28 @@
+<header> Heading Tags </header>
+<para> Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>. While displaying any heading, browser adds one line before and one line after that heading. </para>
+<para> This will produce the following result − </para>
+<header> Paragraph Tag </header>
+<para> The <p> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening <p> and a closing </p> tag as shown below in the example − </para>
+<para> This will produce the following result − </para>
+<header> Line Break Tag </header>
+<para> Whenever you use the <br /> element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them. </para>
+<para> The <br /> tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use <br> it is not valid in XHTML. </para>
+<para> This will produce the following result − </para>
+<header> Centering Content </header>
+<para> You can use <center> tag to put any content in the center of the page or any table cell. </para>
+<para> This will produce following result − </para>
+<header> Horizontal Lines </header>
+<para> Horizontal lines are used to visually break-up sections of a document. The <hr> tag creates a line from the current position in the document to the right margin and breaks the line accordingly. </para>
+<para> For example, you may want to give a line between two paragraphs as in the given example below − </para>
+<para> This will produce the following result − </para>
+<para> Again <hr /> tag is an example of the empty element, where you do not need opening and closing tags, as there is nothing to go in between them. </para>
+<para> The <hr /> element has a space between the characters hr and the forward slash. If you omit this space, older browsers will have trouble rendering the horizontal line, while if you miss the forward slash character and just use <hr> it is not valid in XHTML </para>
+<header> Preserve Formatting </header>
+<para> Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag <pre>. </para>
+<para> Any text between the opening <pre> tag and the closing </pre> tag will preserve the formatting of the source document. </para>
+<para> This will produce the following result − </para>
+<para> Try using the same code without keeping it inside <pre>...</pre> tags </para>
+<header> Nonbreaking Spaces </header>
+<para> Suppose you want to use the phrase "12 Angry Men." Here, you would not want a browser to split the "12, Angry" and "Men" across two lines − </para>
+<para> In cases, where you do not want the client browser to break text, you should use a nonbreaking space entity &nbsp; instead of a normal space. For example, when coding the "12 Angry Men" in a paragraph, you should use something similar to the following code − </para>
+<para> This will produce the following result − </para>

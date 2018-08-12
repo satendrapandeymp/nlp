@@ -1,0 +1,17 @@
+<para> A webpage layout is very important to give better look to your website. It takes considerable time to design a website's layout with great look and feel. </para>
+<para> Now-a-days, all modern websites are using CSS and JavaScript based framework to come up with responsive and dynamic websites but you can create a good layout using simple HTML tables or division tags in combination with other formatting tags. This chapter will give you few examples on how to create a simple but working layout for your webpage using pure HTML and its attributes. </para>
+<header> HTML Layout - Using Tables </header>
+<para> The simplest and most popular way of creating layouts is using HTML <table> tag. These tables are arranged in columns and rows, so you can utilize these rows and columns in whatever way you like. </para>
+<para> For example, the following HTML layout example is achieved using a table with 3 rows and 2 columns but the header and footer column spans both columns using the colspan attribute − </para>
+<para> This will produce the following result − </para>
+<header> Multiple Columns Layout - Using Tables </header>
+<para> You can design your webpage to put your web content in multiple pages. You can keep your content in middle column and you can use left column to use menu and right column can be used to put advertisement or some other stuff. This layout will be very similar to what we have at our website tutorialspoint.com. </para>
+<para> Here is an example to create three column layout − </para>
+<para> This will produce the following result − </para>
+<header> HTML Layouts - Using DIV, SPAN </header>
+<para> The <div> element is a block level element used for grouping HTML elements. While the <div> tag is a block-level element, the HTML <span> element is used for grouping elements at an inline level. </para>
+<para> Although we can achieve pretty nice layouts with HTML tables, but tables weren't really designed as a layout tool. Tables are more suited to presenting tabular data. </para>
+<para> Note − This example makes use of Cascading Style Sheet (CSS), so before understanding this example you need to have a better understanding on how CSS works. </para>
+<para> Here we will try to achieve same result using <div> tag along with CSS, whatever you have achieved using <table> tag in previous example. </para>
+<para> This will produce the following result − </para>
+<para> You can create better layout using DIV, SPAN along with CSS. For more information on CSS, please refer to CSS Tutorial. </para>

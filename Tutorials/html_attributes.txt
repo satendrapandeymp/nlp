@@ -1,0 +1,37 @@
+<para> We have seen few HTML tags and their usage like heading tags <h1>, <h2>, paragraph tag <p> and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information. </para>
+<para> An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts − a name and a value </para>
+<para> The name is the property you want to set. For example, the paragraph <p> element in the example carries an attribute whose name is align, which you can use to indicate the alignment of paragraph on the page. </para>
+<para> The value is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute:  left, center and right. </para>
+<para> Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation. </para>
+<para> This will display the following result − </para>
+<header> Core Attributes </header>
+<para> The four core attributes that can be used on the majority of HTML elements (although not all) are − </para>
+<para> The id attribute of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary reasons that you might want to use an id attribute on an element − </para>
+<para> If an element carries an id attribute as a unique identifier, it is possible to identify just that element and its content. </para>
+<para> If you have two elements of the same name within a Web page (or style sheet), you can use the id attribute to distinguish between elements that have the same name. </para>
+<para> We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph elements as shown below. </para>
+<para> Example </para>
+<para> The title attribute gives a suggested title for the element. They syntax for the title attribute is similar as explained for id attribute − </para>
+<para> The behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when cursor comes over the element or while the element is loading. </para>
+<para> Example </para>
+<para> This will produce the following result − </para>
+<para> Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you used in your code is coming out as a tooltip of the cursor. </para>
+<para> The class attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it. </para>
+<para> The value of the attribute may also be a space-separated list of class names. For example − </para>
+<para> The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element. </para>
+<para> This will produce the following result − </para>
+<para> At this point of time, we are not learning CSS, so just let's proceed without bothering much about CSS. Here, you need to understand what are HTML attributes and how they can be used while formatting content. </para>
+<header> Internationalization Attributes </header>
+<para> There are three internationalization attributes, which are available for most (although not all) XHTML elements. </para>
+<para> The dir attribute allows you to indicate to the browser about the direction in which the text should flow. The dir attribute can take one of two values, as you can see in the table that follows − </para>
+<para> Example </para>
+<para> This will produce the following result − </para>
+<para> When dir attribute is used within the <html> tag, it determines how text will be presented within the entire document. When used within another tag, it controls the text's direction for just the content of that tag. </para>
+<para> The lang attribute allows you to indicate the main language used in a document, but this attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This attribute has been replaced by the xml:lang attribute in new XHTML documents. </para>
+<para> The values of the lang attribute are ISO-639 standard two-character language codes. Check HTML Language Codes: ISO 639 for a complete list of language codes. </para>
+<para> Example </para>
+<para> This will produce the following result − </para>
+<header> The xml:lang Attribute </header>
+<para> The xml:lang attribute is the XHTML replacement for the lang attribute. The value of the xml:lang attribute should be an ISO-639 country code as mentioned in previous section. </para>
+<para> Here's a table of some other attributes that are readily usable with many of the HTML tags. </para>
+<para> We will see related examples as we will proceed to study other HTML tags. For a complete list of HTML Tags and related attributes please check reference to HTML Tags List. </para>
