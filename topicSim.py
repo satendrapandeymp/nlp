@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+
+__author__ = "Satyendra Pandey"
+__email__  = "pandeys@iitk.ac.in"
+
+
 import gensim
 from gensim import corpora
 from langProcessing import docParse, preProcess, cwords, subsParse, get_cosine, column, l2doc
@@ -36,9 +42,10 @@ if __name__ == "__main__":
 
 	# now we will check it against all of the tutorials
 	# Here I am assuming that most of thr tutorials must have some good resources on each topic
+	# to go inside all the video tutorials
 	for ytFolder in ytFolders:
 
-		# Iterate through all the folders
+		# Iterate through all the files in that video tutorial folders
 		ytFiles = sorted(glob(ytFolder + "/*")) 	
 
 
@@ -51,7 +58,7 @@ if __name__ == "__main__":
 			procSubs.append({'para': arr_para, 'header': arr_header})
 
 
-		# find cosine similarity for all of the tutorialpoint documents
+		# find cosine similarity in topics for all of the tutorialpoint documents
 		tempRes = []
 		for countTute, procTute in  enumerate(procTutes):			
 			result = []
@@ -68,11 +75,13 @@ if __name__ == "__main__":
 					temp_res +=     get_cosine(l2doc(ldamodel[subHeader]) , l2doc(ldamodel[tutPara]))
 					temp_res +=     get_cosine(l2doc(ldamodel[subPara]) ,   l2doc(ldamodel[tutHeader]))
 				result.append({"score": temp_res, "file": ytFiles[countSub]})
+			# Sorting by the score and later we wil take just the one document from this video tutorial which did match with highest score
 			result.sort(key=lambda r:r["score"])
 			tempRes.append({ "tutorialFile": tuteFiles[countTute].split("/")[-1], "matchedFile":  result[-1:][0]["file"], "Score": result[-1:][0]["score"]})
 
 		finalRes.append(tempRes)	
-			
+	
+	# Just to rearrange the result and take only 5 good videos for each of the tutorialpoint tutorial
 	mfinalRes = []	
 	for i in range(len(tuteFiles)):
 		temp = column(finalRes, i)
