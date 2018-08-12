@@ -10,9 +10,9 @@ Use following command to install dependency
 pip install -r req.txt
 ```
 
-Now you need to download some models in nltk, You can simply run 
-**import nltk**
-**nltk.download(pkgName)**
+Now you need to download some models in nltk, You can simply run <br />
+**import nltk** <br />
+**nltk.download(pkgName)** <br />
 
 **there will be link.csv file to give you reference of link from filename**
 
@@ -20,14 +20,12 @@ Now you need to download some models in nltk, You can simply run
 
 ### 1) Downloading data from youtube
     Run gettingSub.py by using following commands and give keywords when asked
-    ```bash
     python gettingSub.py
-    ```
     you can also use this feature in other python script by importing the class ScrapSubs
 
 ### 2) Downloading data from tutorialspoint
     Run gettingTut.py by using following commands and give base url like "https://www.tutorialspoint.com/javascript/javascript_overview.htm" when asked
-    ```python gettingTut.py```
+    python gettingTut.py
     you can also use this feature in other python script by importing the class scrapTutorials
 
 ### 3) Preprocessing of data
@@ -49,13 +47,13 @@ Now you need to download some models in nltk, You can simply run
     This is the most common algorithms to compare two documents, Where we get bag of words then see cosine similarity of two documents.
     In this scripts I have also compared heading-heading and haven't normalised the score so don't freak out if you see score more than 1 :p
     Run docSimilarity.py by using following commands it will save results in a csv file where first column consist our tutorialpoints filename and subsequesnt columns represents close yoputube videos
-    ```python docSimilarity.py```
+    python docSimilarity.py
 
 ### 5) Topic Modeling
     In topic modeling we get a topic from a given document, It used LDA "https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" model.
     In this scripts I have also compared heading-heading and haven't normalised the score so don't freak out if you see score more than 1 :p
     Run topicSim.py by using following commands it will save results in a csv file where first column consist our tutorialpoints filename and subsequesnt columns represents close yoputube videos
-    ```python topicSim.py```
+    python topicSim.py
 
 
 Just check the filename agains link using ref.csv
