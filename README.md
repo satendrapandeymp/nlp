@@ -1,8 +1,8 @@
-## Comparing tutorialspoint.com tutorial to video tutorials
+## Gwtting relevent videos for tutorialspoint.com tutorials
 
 ## Installation
-This code have been developed on a debian based system so for using this on windows maching just look at the section where filename have been mentioned.
-And change it accordingly, If you're using mac then You're on your own.
+This code have been developed on a debian based system so for using this on windows maching just look at the section where filename have been mentioned. if less on time then just replace '/' by '\\' and if you have enough time then just import module os and use os.join() and push it back for greater good.
+If you're using mac then You're on your own.
 
 Use following command to install dependency
 
@@ -10,16 +10,16 @@ Use following command to install dependency
 pip install -r req.txt
 ```
 
-Now you need to download some models in nltk, You can simply run <br />
-**import nltk** <br />
-**nltk.download(pkgName)** <br />
+Now you need to download some models in nltk, You can simply run these command in python consol <br />
+import nltk <br />
+nltk.download(pkgName) <br />
 
-**there will be link.csv file to give you reference of link from filename**
+**there will be Out/linkSub.csv file to give you reference of link from filename of subtitle or tutorials which will be helpful in interpreting result**
 
 ## This project are divided into several parts
 
 ### 1) Downloading data from youtube
-    Run gettingSub.py by using following commands and give keywords when asked
+    Run gettingSub.py by using following commands and give keywords "Html Tutoprials" when asked
     python gettingSub.py
     you can also use this feature in other python script by importing the class ScrapSubs
 
@@ -37,19 +37,19 @@ Now you need to download some models in nltk, You can simply run <br />
         5) Removing some parts of speech which have no impacts
         6) Removing most common youtube word like "guys", "yeah"...., 
         7) You can get most common youtube words by downloading subtitles from many tutorial and getting distribution from function commonAll()
-        8) Stem the word to get the original word so we don't see function, functions different
+        8) Stemming the word to get the original word so we don't see function, functions different
     File gettingTut.py contains a many relevent functions.
     Function preProcess() will return preprocessed string into string format as well as list format
     you can import functions like this:
     from langProcessing import docParse, preProcess, cwords, subsParse, get_cosine, column
 
-### 4) Doc_matching
+### 4) docMatching
     This is the most common algorithms to compare two documents, Where we get bag of words then see cosine similarity of two documents.
     In this scripts I have also compared heading-heading and haven't normalised the score so don't freak out if you see score more than 1 :p
     Run docSimilarity.py by using following commands it will save results in a csv file where first column consist our tutorialpoints filename and subsequesnt columns represents close yoputube videos
     python docSimilarity.py
 
-### 5) Topic Modeling
+### 5) topicModeling
     In topic modeling we get a topic from a given document, It used LDA "https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" model.
     In this scripts I have also compared heading-heading and haven't normalised the score so don't freak out if you see score more than 1 :p
     Run topicSim.py by using following commands it will save results in a csv file where first column consist our tutorialpoints filename and subsequesnt columns represents close yoputube videos
