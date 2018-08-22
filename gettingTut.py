@@ -13,7 +13,7 @@ sys.setdefaultencoding("utf-8")
 
 
 # Defining class to scrap data from tutorials point
-class scrapTutorials:
+class gettingTut:
 	
 	# To intialise the class
 	def __init__(self, seed = None):
@@ -125,5 +125,5 @@ class scrapTutorials:
 # Run if this file is being run as main file
 if __name__ == "__main__":	
 	seed = raw_input("please type the base link : ")
-	obj = scrapTutorials(seed)
+	obj = gettingTut(seed)
 	obj.saveData()

@@ -3,7 +3,7 @@
 __author__ = "Satyendra Pandey"
 __email__  = "pandeys@iitk.ac.in"
 
-import urllib, re, os, time, sys
+import urllib, re, os, time, sys, gc
 from bs4 import BeautifulSoup as Soup
 
 
@@ -12,7 +12,7 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
   
 
-class ScrapSubs:
+class gettingSub:
 	
 	# To intialise the class
 	def __init__(self, search_term=None, search_type=None):
@@ -27,8 +27,12 @@ class ScrapSubs:
 		self.url = "http://www.youtube.com/results?"
 		self.__CheckDir("Results")
 		self.__CheckDir("Out")
+		self.__CheckDir("Temp")
+		self.__CheckDir("Temp/" + search_term)
 		if search_type == "playlists":
 			self.url += "sp=EgIQA0IECAESAA%253D%253D&"
+		else:
+			self.url += "sp=EgIQAQ%253D%253D&"
 
 
 	# To make a directory if that is not already there
@@ -136,24 +140,24 @@ class ScrapSubs:
 			if self.search_type != "playlists":
 				vid = temp_link['url'][32:43]
 				name = "\\".join(temp_link['title'].split("/"))
-				name = "Results/{0}.txt".format(name)
+				name = "Temp/{0}/{1}.{2}.txt".format(self.search_term, name, vid)
 			else:
 				vid = temp_link['link'][32:43]
 				name = "\\".join(temp_link['vtitle'].split("/"))
 				fname = "\\".join(temp_link['title'].split("/"))
-				name = "Results/{0}/{1}.txt".format(fname, name)
+				name = "Results/{0}/{1}.{2}.txt".format(fname, name, vid)
 				self.__CheckDir("Results/" + fname)
 
-			print temp_link['link'], '\t', vid
+			print "Done with ?v=" + vid
 			link = "http://diycaptions.com/php/get-automatic-captions-as-txt.php?id={0}&language=asr".format(vid)
 			time.sleep(1)
 			link = self.__process_sub(link, name)
-				
 
-	
+
+
 if __name__ == "__main__":
 
 	title = raw_input("Please type the search keywords : ")
-	obj = ScrapSubs(title)
+	obj = gettingSub(title, "Video")
 	print obj.Get_subtitle()
 

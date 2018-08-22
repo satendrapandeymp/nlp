@@ -59,7 +59,8 @@ def subsParse(filename):
 	with open(filename, 'r') as tempReader:
 		data = tempReader.read()
 	defaultHeader = filename.split("/")[-1].split(".")[0]
-	result = {"header": defaultHeader, "para": data}
+	vid = filename.split("/")[-1].split(".")[-2]
+	result = {"header": defaultHeader, "para": data, "vid": vid}
 	return result
 
 
