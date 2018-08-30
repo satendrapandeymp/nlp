@@ -1,1 +1,0 @@
-<para> Following tags have been introduced in older versions of HTML but all the tags marked with  are part of HTML-5. </para>

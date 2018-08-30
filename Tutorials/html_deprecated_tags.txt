@@ -1,3 +1,0 @@
-<para> A complete list of deprecated HTML tags and attributes are given here. All the tags have been ordered alphabetically along with their equivalent tag or alternate CSS option. </para>
-<header> HTML Deprecated Attributes </header>
-<para> Following is the list of deprecated HTML attributes and alternative CSS options available. </para>

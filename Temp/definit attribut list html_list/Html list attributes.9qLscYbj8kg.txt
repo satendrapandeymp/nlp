@@ -1,1 +1,0 @@
-hello everyone today I am going to show HTML list most commonly used in contents or articles when developing a web page starting first with unordered list we begin and end with UL tag now with ordered list and beginning and end using oil tank using HTML unordered list attributes here are examples of HTML orderlies types		

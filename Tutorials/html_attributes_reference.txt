@@ -1,7 +1,0 @@
-<para> There are few HTML attributes which are standard and associated to all the HTML tags. These attributes are listed here with a brief description. </para>
-<header> Global Attributes </header>
-<para> Not valid in base, head, html, meta, param, script, style, and title elements. </para>
-<header> Language Attributes </header>
-<para> The lang attribute indicates the language being used for the enclosed content. The language is identified using the ISO standard language abbreviations, such as fr for French, en for English, and so on. </para>
-<para> RFC 1766 (http://www.ietf.org/rfc/rfc1766.txt) describes these codes and their formats. </para>
-<para> Not valid in base, br, frame, frameset, hr, iframe, param, and script elements. </para>

@@ -1,9 +1,0 @@
-<para> The following resources contain additional information on HTML. Please use them to get more in-depth knowledge on this topic. </para>
-<header> Useful Links on HTML Technologies </header>
-<para> HTML 4.01 Specification − Official website of HTML 4.01 Specification. </para>
-<para> HTML5 − A vocabulary and associated APIs for HTML and XHTML </para>
-<para> Domain Names − Details of the domain system and protocol. </para>
-<para> Cascading Style Sheets Level 2.1 − This specification defines Cascading Style Sheets, level 2 revision 1 (CSS 2.1). </para>
-<para> Introduction to CSS3 − This document lists all the modules to be contained in the future CSS3 specification. </para>
-<header> Useful Books on HTML Technologies </header>
-<para> To enlist your site on this page, please drop an email to contact@tutorialspoint.com </para>
