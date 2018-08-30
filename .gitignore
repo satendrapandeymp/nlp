@@ -2,4 +2,4 @@ Out/
 Temp/
 Results/
 Tutorials/
-gettingSub.pyc langProcessing.pyc
+*.pyc
