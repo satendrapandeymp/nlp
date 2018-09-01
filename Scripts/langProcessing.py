@@ -116,9 +116,11 @@ def commonAll(ytFiles):
 
 # Already assign common word to be loaded which is in common.txt
 def commonSpec(fileName):
-	with open(fileName, 'r') as tempReader:
-		mess = tempReader.read()
-	mess = mess.lower()
+    # For now not using txt file, Just some common words
+    # Will update later
+	#with open(fileName, 'r') as tempReader:
+	#	mess = tempReader.read()
+	mess = "let valu thing someth guy exampl see okay yeah e hey etc"
 	mess = WORD.findall(mess)
 	return set(mess)	
 

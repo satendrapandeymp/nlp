@@ -2,4 +2,6 @@ Out/
 Temp/
 Results/
 Tutorials/
-*.pyc
+**pyc
+.vscode/
+temp.html

@@ -4,38 +4,26 @@ __author__ = "Satyendra Pandey"
 __email__  = "pandeys@iitk.ac.in"
 
 
-import gensim
-from gensim import corpora
-from langProcessing import docParse, preProcess, cwords, subsParse, get_cosine, column, l2doc
+from langProcessing import docParse, preProcess, cwords, subsParse, get_cosine, column
 from glob import glob
 
-
-Lda = gensim.models.ldamodel.LdaModel
-
-
-if __name__ == "__main__":
 	
+def docSimilarity():
 	# To get the filenames from the directory
 	tuteFiles = sorted(glob("Tutorials/*"))
 	ytFolders = sorted(glob("Results/*"))
 
-	# Process tutorials point document 
+	# Process tutorials point document
 	procTutes = []
-	allWord = []
 	for tuteFile in tuteFiles:
 		singleTute = []
 		result = docParse(tuteFile)
-		for count, res in enumerate(result):
+		for res in result:
 			doc_para, arr_para = preProcess(res['para'])
 			doc_header, arr_header = preProcess(res['header'])
 			singleTute.append({'para': arr_para, 'header': arr_header})
-			allWord.append(arr_para + arr_header)			
 		procTutes.append(singleTute)
-	
-	# to get model of topics using texts from tutorial points
-	dictionary = corpora.Dictionary(allWord) 	
-	doc_term_matrix = [dictionary.doc2bow(doc) for doc in allWord]
-	ldamodel = Lda(doc_term_matrix, num_topics=len(tuteFiles), id2word = dictionary, passes=500)
+
 
 	# FINAL RESULT
 	finalRes = [] 
@@ -58,39 +46,35 @@ if __name__ == "__main__":
 			procSubs.append({'para': arr_para, 'header': arr_header})
 
 
-		# find cosine similarity in topics for all of the tutorialpoint documents
+		# find cosine similarity for all of the tutorialpoint documents
 		tempRes = []
 		for countTute, procTute in  enumerate(procTutes):			
 			result = []
 			for countSub, procSub in enumerate(procSubs):
 				temp_res = 0
 				for section in procTute:
-					subHeader = dictionary.doc2bow(procSub['header'])
-					subPara   = dictionary.doc2bow(procSub['para'])
-					tutHeader = dictionary.doc2bow(section['header'])
-					tutPara   = dictionary.doc2bow(section['para'])
-
-					temp_res += 2 * get_cosine(l2doc(ldamodel[subHeader]) , l2doc(ldamodel[tutHeader]))
-					temp_res += 5 * get_cosine(l2doc(ldamodel[tutPara]) ,   l2doc(ldamodel[subPara]))
-					temp_res +=     get_cosine(l2doc(ldamodel[subHeader]) , l2doc(ldamodel[tutPara]))
-					temp_res +=     get_cosine(l2doc(ldamodel[subPara]) ,   l2doc(ldamodel[tutHeader]))
+					temp_res += 2 * get_cosine(procSub['header'] , section['header'])
+					temp_res += 5 * get_cosine(procSub['para'] , section['para'])
+					temp_res += get_cosine(procSub['header'] , section['para'])
+					temp_res += get_cosine(procSub['para'] , section['header'])
 				result.append({"score": temp_res, "file": ytFiles[countSub]})
 			# Sorting by the score and later we wil take just the one document from this video tutorial which did match with highest score
 			result.sort(key=lambda r:r["score"])
 			tempRes.append({ "tutorialFile": tuteFiles[countTute].split("/")[-1], "matchedFile":  result[-1:][0]["file"], "Score": result[-1:][0]["score"]})
 
-		finalRes.append(tempRes)	
-	
-	# Just to rearrange the result and take only 5 good videos for each of the tutorialpoint tutorial
+		finalRes.append(tempRes)		
+		
+	#arrange the result and take only 5 good videos for each of the tutorialpoint tutorial	
 	mfinalRes = []	
 	for i in range(len(tuteFiles)):
 		temp = column(finalRes, i)
 		temp.sort(key=lambda r:r["Score"])
 		mfinalRes.append(temp[-5:])
+
 	print mfinalRes[0]
 
 	# Finally writing the result in a csv format
-	with open("Out/resTopic.csv", 'w') as writer:	
+	with open("Out/resDoc.csv", 'w') as writer:	
 		for matchRes in mfinalRes:
 			tempStr = matchRes[0]["tutorialFile"] + "\t"
 			for files in matchRes:

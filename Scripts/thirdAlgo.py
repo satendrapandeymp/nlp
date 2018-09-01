@@ -13,7 +13,7 @@ def gettingVid(para, header):
     score = []
     obj = gettingSub( " ".join(list(set(header))), "Video")
     obj.Get_subtitle()
-    flist = sorted(glob("Temp/" + " ".join(list(set(header))) + "/*"))
+    flist = sorted(glob("Results/" + " ".join(list(set(header))) + "/*"))
     for fname in flist:
         result = subsParse(fname)
         doc_para, arr_para = preProcess(result['para'])
@@ -26,7 +26,7 @@ def gettingVid(para, header):
     score.sort(key=lambda x:x["score"], reverse=True )
     return score[:5]
 
-if __name__ == "__main__":
+def thirdAlgo():
 	
 	# To get the filenames from the directory
 	tuteFiles = sorted(glob("Tutorials/*"))

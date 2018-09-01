@@ -27,11 +27,10 @@ class gettingSub:
 		self.url = "http://www.youtube.com/results?"
 		self.__CheckDir("Results")
 		self.__CheckDir("Out")
-		self.__CheckDir("Temp")
-		self.__CheckDir("Temp/" + search_term)
 		if search_type == "playlists":
 			self.url += "sp=EgIQA0IECAESAA%253D%253D&"
 		else:
+			self.__CheckDir("Results/" + search_term)
 			self.url += "sp=EgIQAQ%253D%253D&"
 
 
@@ -140,7 +139,7 @@ class gettingSub:
 			if self.search_type != "playlists":
 				vid = temp_link['url'][32:43]
 				name = "\\".join(temp_link['title'].split("/"))
-				name = "Temp/{0}/{1}.{2}.txt".format(self.search_term, name, vid)
+				name = "Results/{0}/{1}.{2}.txt".format(self.search_term, name, vid)
 			else:
 				vid = temp_link['link'][32:43]
 				name = "\\".join(temp_link['vtitle'].split("/"))
